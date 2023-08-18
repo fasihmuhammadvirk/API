@@ -24,8 +24,6 @@ def greet():
 
 lst = [[1,2],[4,4],[5,5],[6,7],[7,8],[8,9],[9,10]]
 
-
-
 # creating the get response to get all the data from the database
 @app.get("/items", response_model=List,status_code= status.HTTP_200_OK)
 def get_all_items():
